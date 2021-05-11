@@ -12,9 +12,20 @@ class ViewController: UIViewController {
     
    
     @IBOutlet weak var imegeView: UIImageView!
-    @IBOutlet weak var askButtonPressed: UIButton!
     
-    let ballArray = [#imageLiteral(resourceName: "ball1.png"),#imageLiteral(resourceName: "ball2.png"),#imageLiteral(resourceName: "ball3.png"),#imageLiteral(resourceName: "ball4.png"),#imageLiteral(resourceName: "ball5.png")]
+    
+    
+    @IBAction func askButtonPressed(_ sender: UIButton) {
+        print("Button got tapped")
+        let ballArray = [#imageLiteral(resourceName: "ball1.png"),#imageLiteral(resourceName: "ball2.png"),#imageLiteral(resourceName: "ball3.png"),#imageLiteral(resourceName: "ball4.png"),#imageLiteral(resourceName: "ball5.png")]
+        imegeView.image = ballArray.randomElement()
+      //  imageView.image = ballArray.randomElement()
+        
+    }
+   // let ballArray = [#imageLiteral(resourceName: "ball1.png"),#imageLiteral(resourceName: "ball2.png"),#imageLiteral(resourceName: "ball3.png"),#imageLiteral(resourceName: "ball4.png"),#imageLiteral(resourceName: "ball5.png")]
+    
+   // imageView.image = ballArray.randomElement()
+    
 
 
 

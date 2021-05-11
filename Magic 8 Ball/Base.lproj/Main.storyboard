@@ -30,6 +30,9 @@
                                 <state key="normal" title="Ask">
                                     <color key="titleColor" red="0.33725490196078434" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYH-Cf-tMD"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-zf-Y9O">
                                 <rect key="frame" x="87" y="300" width="240" height="245"/>
@@ -40,7 +43,6 @@
                         <color key="backgroundColor" red="0.62352941176470589" green="0.90196078431372551" blue="0.62745098039215685" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="askButtonPressed" destination="EVf-SX-ZBG" id="fQx-a8-nbL"/>
                         <outlet property="imegeView" destination="1fZ-zf-Y9O" id="U6g-c6-dcH"/>
                     </connections>
                 </viewController>
