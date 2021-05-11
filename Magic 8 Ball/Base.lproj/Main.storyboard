@@ -16,16 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask me anythink..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-O5-sLe">
-                                <rect key="frame" x="94" y="168" width="227" height="81"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask me anythink..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-O5-sLe">
+                                <rect key="frame" x="94" y="168" width="266" height="28"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
                                 <color key="textColor" red="0.33725490196078434" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVf-SX-ZBG">
-                                <rect key="frame" x="122" y="610" width="160" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVf-SX-ZBG">
+                                <rect key="frame" x="122" y="655" width="160" height="45"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="28"/>
                                 <state key="normal" title="Ask">
                                     <color key="titleColor" red="0.33725490196078434" green="0.29019607843137252" blue="0.29019607843137252" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
@@ -34,13 +32,26 @@
                                     <action selector="askButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYH-Cf-tMD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-zf-Y9O">
-                                <rect key="frame" x="87" y="300" width="240" height="245"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fZ-zf-Y9O">
+                                <rect key="frame" x="87" y="300" width="240" height="290"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.62352941176470589" green="0.90196078431372551" blue="0.62745098039215685" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="n6g-O5-sLe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="0La-Zd-49u"/>
+                            <constraint firstItem="EVf-SX-ZBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="0W0-zG-xtI"/>
+                            <constraint firstItem="EVf-SX-ZBG" firstAttribute="top" secondItem="1fZ-zf-Y9O" secondAttribute="bottom" constant="65" id="6jN-26-6p7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EVf-SX-ZBG" secondAttribute="bottom" constant="162" id="MfF-0L-svq"/>
+                            <constraint firstItem="1fZ-zf-Y9O" firstAttribute="top" secondItem="n6g-O5-sLe" secondAttribute="bottom" constant="51" id="asy-xZ-Ioy"/>
+                            <constraint firstItem="n6g-O5-sLe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="124" id="cCF-tI-9kf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1fZ-zf-Y9O" secondAttribute="trailing" constant="87" id="eGb-MP-q6y"/>
+                            <constraint firstItem="1fZ-zf-Y9O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="kL9-yP-f6d"/>
+                            <constraint firstItem="EVf-SX-ZBG" firstAttribute="top" secondItem="1fZ-zf-Y9O" secondAttribute="bottom" constant="65" id="p2E-Lg-J2G"/>
+                            <constraint firstItem="1fZ-zf-Y9O" firstAttribute="top" secondItem="n6g-O5-sLe" secondAttribute="bottom" constant="104" id="q83-6P-yBO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EVf-SX-ZBG" secondAttribute="trailing" constant="132" id="s3r-L5-Pmq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n6g-O5-sLe" secondAttribute="trailing" constant="54" id="zwB-wf-3cf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imegeView" destination="1fZ-zf-Y9O" id="U6g-c6-dcH"/>
