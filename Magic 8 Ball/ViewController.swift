@@ -30,7 +30,8 @@ class ViewController: UIViewController {
             self.view.sendSubviewToBack(imageView1)
         }
     
-   
+    
+    
     @IBOutlet weak var imegeView: UIImageView!
     
     
